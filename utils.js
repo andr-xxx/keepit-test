@@ -10,6 +10,4 @@ export const debounce = (cb, tm) => {
 
 export const filterTasks = (task, filters) => {
     return (!filters.title || task.title.includes(filters.title)) && (!filters.dueDate || task.dueDate === filters.dueDate);
-
-
 }
