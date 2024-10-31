@@ -69,7 +69,7 @@ import {debounce} from './utils.js'
             const callback = debounce((event) => {
                 this.filters.title = event.target.value
                 this.renderTasks(this.filters)
-            })
+            }, 500)
 
             title.addEventListener('input', callback)
 

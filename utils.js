@@ -1,10 +1,10 @@
-export const debounce = (cb) => {
+export const debounce = (cb, tm) => {
     let timeout
     return (...args) => {
         clearTimeout(timeout)
         timeout = setTimeout(() => {
             cb.apply(this, args)
-        }, 500)
+        }, tm)
     }
 }
 
