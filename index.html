@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KeepIt Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <header class="app__header">
+        <h1 class="app__title">Todo App</h1>
+    </header>
+
+    <nav class="filter">
+        <h2 class="tasks__title">Filtering Panel</h2>
+        <div class="filter__controls">
+            <label class="form__label">Search by title:
+                <input type="text" class="form__input form__input_text">
+            </label>
+            <label class="form__label">Search by due date:
+                <input type="date" class="form__input form__input_date">
+            </label>
+        </div>
+    </nav>
+
+    <section class="tasks tasks__todo">
+        <h2 class="tasks__title">Task List</h2>
+    </section>
+
+    <section class="tasks tasks__completed">
+        <h2 class="tasks__title">Completed Tasks</h2>
+    </section>
+
+    <section class="new-task">
+        <h2 class="tasks__title">Add New Task</h2>
+        <div class="new-task__controls">
+            <label class="form__label">
+                Title:
+                <input type="text" class="form__input form__input_text">
+            </label>
+            <label class="form__label">
+                Description:
+                <textarea class="form__input form__textarea"></textarea>
+            </label>
+            <label class="form__label">
+                Due Date:
+                <input type="date" class="form__input form__input_date">
+            </label>
+            <button class="new-task__button">Add New Task</button>
+        </div>
+    </section>
+</div>
+<script src="index.js" type="module"></script>
+</body>
+</html>

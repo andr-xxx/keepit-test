@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.app__header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.app__title {
+    font-size: 2rem;
+    color: #333;
+}
+
+.filter {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.filter__controls {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tasks__title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form__input {
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form__input_text {
+    margin-bottom: 10px;
+}
+
+.tasks {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.task__checkbox {
+    margin-right: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.task__content-layout {
+    width: 100%;
+    margin: 0 10px
+}
+
+.task__content {
+    max-width: 70%;
+}
+
+.task__title {
+    font-weight: bold;
+    color: #333;
+}
+
+.task__description,
+.task__due-date {
+    color: #555;
+}
+
+.task__actions {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task__button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.task__button_delete {
+    background-color: #e74c3c;
+}
+
+.task__button_edit {
+    background-color: #e7c90d;
+}
+
+.task__button_save {
+    background-color: #27ae60;
+}
+
+.task__button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.tasks__completed .task__title,
+.tasks__completed .task__description,
+.tasks__completed .task__due-date {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.new-task {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.new-task__button {
+    padding: 8px 12px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
